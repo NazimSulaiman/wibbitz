@@ -1,0 +1,1381 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti Medium", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1100px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti Light';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti Regular';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti Medium';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti Bold';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+header { 
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 100px;
+}
+header h1 { 
+	width: 150px;
+}
+header h1 a { 
+	width: 100%;
+	display: block;
+}
+header h1 a img { 
+	width: 100%;
+	display: block;
+}
+header nav.middle ul { 
+	display: flex;
+}
+header nav.middle ul li { 
+	margin-right: 30px;
+}
+header nav.middle ul li:last-child{
+	margin-right: 0;
+}
+header nav.middle ul li a { 
+	font-family: 'GT-Eesti Regular';
+}
+header nav.right ul { 
+	display: flex;
+	align-items: center;
+}
+header nav.right ul li { 
+	margin-right: 30px;
+}
+header nav.right ul li:last-child{
+	margin-right: 0;
+}
+header nav.right ul li a{
+	font-family: 'GT-Eesti Regular';
+}
+header nav.right ul li a.button{ 
+	color: rgb(236, 15, 15);
+	background: rgb(224, 167, 167);
+	padding: 5px 15px;
+	border-radius: 5px;
+	display: inline-block;
+}
+#spotlight{
+	padding: 100px 0 100px;
+}
+#spotlight section.wrapper{ 
+	display: flex;
+	justify-content: space-between;
+}
+#spotlight section.left { 
+	width: 40%;
+}
+#spotlight section.left h1 { 
+	font-size: 50px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	font-family: 'GT-Eesti Bold';
+}
+#spotlight section.left p { 
+	font-size: 16px;
+	margin-bottom: 30px;
+	font-family: 'GT-Eesti Medium';
+	width: 80%;
+}
+#spotlight section.left form { 
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	border:1px solid #000;
+	border-radius: 10px;
+	position: relative;
+}
+#spotlight section.left form input[type="email"]{
+	padding: 17px 15px;
+}
+#spotlight section.left form input[type="submit"]{ 
+	padding: 18px 20px;
+	color: #fff;
+	background: rgb(38, 92, 240);
+	border-radius: 5px;
+	position: absolute;
+	right: -1%;
+	top: -2%;
+}
+#spotlight section.right{
+	position: relative;
+	width: 60%;
+	background: url(../images/home-hero.svg)no-repeat;
+    background-position: right 100px top -7px;
+    background-size: 550px;
+}
+#spotlight section.right div.dotted{
+	position: absolute;
+    top: -28px;
+    left: 200px
+}
+#spotlight section.right div.play{
+	padding: 25px 30px;
+	background: #ff794b;
+	display: inline-block;
+	border-radius: 50%;
+	position: absolute;
+	top: -62px;
+    left: 274px;
+}
+#spotlight section.right div.play img{
+	filter: invert(100%);
+}
+#creators { 
+	padding: 100px 0;
+}
+#creators h6 { 
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	text-align: center;
+}
+#creators ul { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#creators ul li { 
+	width: 12.5%;
+	padding: 20px 0;
+}
+#creators ul li a { 
+	display: block;
+	width: 100%;
+}
+#creators ul li a img { 
+	display: block;
+	width: 100%;
+	height: 25px;
+}
+#content section.features{
+	padding: 60px 0;
+}
+#content section.features section.wrapper { 
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+#content section.features.bg section.wrapper { 
+	justify-content: center;
+}
+#content section.features.bg{ 
+	background: #f5f2f2;
+}
+#content section.features div.left { 
+	width: 40%;
+}
+#content section.features div.left img { 
+	display: block;
+	width: 100%;
+}
+#content section.features div.right { 
+	width: 40%;
+	margin-left: 150px;
+}
+#content section.features.bg div.right { 
+	margin: 0 100px 0 100px;
+}
+#content section.features div.right div.top span.icon{ 
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #ed6d23;
+	border-radius: 45%;
+	width: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#content section.features div.right div.top span.icon.yellow{
+	background: #ebcf33;
+}
+#content section.features div.right div.top span.icon.green{
+	background: #53f3a8;
+}
+#content section.features div.right div.top h3 { 
+	font-weight: 600;
+	font-family: 'GT-Eesti Bold';
+	font-size: 40px;
+	margin-bottom: 25px;
+}
+#content section.features div.right div.top p { 
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	font-family: 'GT-Eesti Medium';
+}
+#content section.features div.right div.top a.button { 
+	background:#0056fb;
+	color: #fff;
+	padding: 12px 25px;
+	display: inline-block;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+#content section.features div.right div.top hr.line{
+	border-bottom: 1px dotted #000;
+	width: 50%;
+}
+#content section.features div.right div.review { 
+	margin-top: 20px;
+}
+#content section.features div.right div.review blockquote { 
+	color: #9B9B9B;
+	margin-bottom: 15px;
+	font-style: italic;
+}
+#content section.features div.right div.review span { 
+	color: #9B9B9B;
+	margin-bottom: 30px;
+	display: block;
+}
+#content section.features div.right div.review small { 
+	display: block;
+}
+#content section.features div.right div.review small img { 
+	display: inline-block;
+	height: 20px;
+}
+#reviews { 
+	padding-bottom: 100px;
+}
+#reviews section.top { 
+	width: 40%;
+	margin-bottom: 30px;
+}
+#reviews section.top h3 { 
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'GT-Eesti Bold';
+}
+#reviews section.bottom ul { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#reviews section.bottom ul li { 
+	width: 32%;
+	
+}
+#reviews section.bottom ul li div.top { 
+	background: url('../images/review1.jpg')no-repeat;
+	background-size: cover;
+	height: 294px;
+	width: 360px;
+}
+#reviews section.bottom ul li div.top div.play{
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+}
+#reviews section.bottom ul li div.top div.play span.play { 
+	padding: 15px 20px;
+	background: #fff;
+	border-radius: 50%;
+	display: inline-block;
+
+}
+#reviews section.bottom ul li div.top div.play span.play img { 
+	width: 8px;
+}
+#reviews section.bottom ul li div.top div.logo { 
+	width: 100px;
+	height: 50px;
+	padding: 160px 0 0 10px;
+}
+#reviews section.bottom ul li div.top div.logo img { 
+	display: inline-block;
+    height: 50px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 10px;
+}
+#reviews section.bottom ul li h4 { 
+	margin-top: 15px;
+	font-size: 16px;
+	font-weight: 600;
+	width: 80%;
+}
+#about { 
+	padding: 100px 0;
+}
+#about ul { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#about ul li { 
+	width: 48%;
+}
+#about ul li div.top { 
+	background:url('../images/Chase-Kroll-920x760normal-1.png')no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	border-radius: 7px;
+}
+#about ul li div.top.ken{
+	background: url('../images/Ken-Gibs-920x760normal-1.png')no-repeat;
+}
+#about ul li div.top div.logo { 
+	background: #fff;
+	padding: 10px;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	margin: 290px 10px 10px;
+}
+#about ul li div.top div.logo img { 
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+#about ul li div.bottom { 
+	margin-top: 15px;
+	width: 83%;
+}
+#about ul li div.bottom blockquote { 
+	font-weight: 700;
+	margin-bottom: 20px;
+	font-family: 'GT-Eesti Bold';
+}
+#about ul li div.bottom h6 { 
+	font-weight: 700;
+    font-size: 15px;
+	margin-bottom: 5px;
+	font-family: 'GT-Eesti Medium';
+}
+#about ul li div.bottom span { 
+	display: block;
+	color: #9B9B9B;
+	margin-bottom: 5px;
+	font-family: 'GT-Eesti Light';
+}
+#about ul li div.bottom small { 
+	font-weight: 600;
+	font-size: 13px;
+	font-family: 'GT-Eesti Medium';
+}
+#features { 
+	background: #f7f4f4;
+	padding: 100px 0;
+}
+#features section.top { 
+	width: 45%;
+	text-align: center;
+	margin: 0 auto; 
+}
+#features section.top h3 { 
+	font-size: 40px;
+	font-weight: 600;
+	font-family: 'GT-Eesti Bold';
+	margin-bottom: 60px;
+}
+#features section.content { 
+	margin-bottom: 60px;
+}
+#features section.content ul { 
+	display: flex;
+	flex-wrap: wrap;
+}
+#features section.content ul li { 
+	width: 33.33%;
+	padding: 75px;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+#features section.content ul li.border{
+	border-right: 1px dotted rgb(192, 181, 181);
+}
+#features section.content ul li a { 
+	display: block;
+	width: 100%;
+}
+#features section.content ul li a img { 
+	display: block;
+	width: 100%;
+}
+#features section.content ul li h3 { 
+	margin: 20px 0;
+    font-weight: 600;
+    font-size: 24px;
+	font-family: 'GT-Eesti Bold';
+}
+#features section.content ul li h3 a { 
+	display: block;
+	width: 100%;
+}
+#features section.content ul li p { 
+	font-size: 17px;
+	font-family: 'GT-Eesti Medium';
+}
+#features section.bottom { 
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+#features section.bottom section.content { 
+	position: relative;
+}
+#features section.bottom section.content span.icon { 
+	position: absolute;
+	left: 5%;
+	top: -30%;
+	padding: 14px 16px;
+	background: #fff;
+	border-radius: 45%;
+	box-shadow: 1px 5px 1px 2px rgba(141, 138, 138, 0.1);
+}
+#features section.bottom section.content span.icon img { 
+	width: 100%;
+	display: inline-block;
+}
+#features section.bottom section.content div.element { 
+	background: rgb(209, 227, 241);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 25px;
+	border-radius: 5px;
+}
+#features section.bottom section.content div.element p { 
+	text-align: left;
+	width: 60%;
+	font-family: 'GT-Eesti Medium';
+	font-size: 17px;
+}
+#features section.bottom section.content div.element a.button { 
+	background: #0056fb;
+	padding: 12px;
+	border-radius: 4px;
+	color: #fff;
+	font-family: 'GT-Eesti Regular';
+}
+#products { 
+	padding: 100px 0;
+}
+#products section.top { 
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+}
+#products section.top h3 { 
+	font-size: 35px;
+	font-family: 'GT-Eesti Bold';
+	margin-bottom: 60px;
+}
+#products ul { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#products ul li { 
+	width: 31%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 45px;
+	height: 600px;
+	position: relative;
+}
+#products ul li:first-child {
+	background: #d0dfff;
+}
+#products ul li:last-child {
+	background: #fef4d7;
+}
+#products ul li:nth-child(2) {
+	background: #ffe4da;
+}
+#products ul li span.logo { 
+	padding: 15px;
+	background: #fff;
+	display: inline-block;
+	border-radius: 40%;
+	margin:0  0 20px 0;
+}
+#products ul li span.logo img { 
+	display: inline-block;
+	width: 100%;
+}
+#products ul li span.logo img:last-child{
+	width: 30px;
+}
+#products ul li h1 { 
+	font-size: 25px;
+	font-family: 'GT-Eesti Medium';
+	margin-bottom: 20px;
+}
+#products ul li p { 
+	font-size: 17px;
+	font-family: 'GT-Eesti Medium';
+	margin-bottom: 30px;
+}
+#products ul li a.button { 
+	background: #0056fb;
+	color: #fff;
+	padding: 12px 25px;
+	display: inline-block;
+	border-radius: 10px;
+	font-family: 'GT-Eesti Medium';
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+#products ul li a.button.two{
+	background: #ffc836;
+}
+#products ul li a.button.three{
+	background: #ff794b;
+}
+#products ul li div.img_container { 
+	width: 300px;
+}
+#products ul li div.img_container img.hero { 
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 60%;
+	left: 3%;
+}
+#blog { 
+	padding: 100px 0;
+}
+#blog section.top { 
+	width: 40%;
+	margin-bottom: 60px;
+}
+#blog section.top h3 { 
+	font-size: 35px;
+	font-family: 'GT-Eesti Bold';
+}
+#blog ul { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+}
+#blog ul li { 
+	width: 31%;
+}
+#blog ul li div.img_container { 
+	margin-bottom: 20px;
+}
+#blog ul li div.img_container img { 
+	display: block;
+	border-radius: 5px;
+	width: 100%;
+}
+#blog ul li span.label { 
+	font-family: 'GT-Eesti Regular';
+	margin-bottom: 20px;
+	display: inline-block;
+}
+#blog ul li span.label:hover{
+	color: #2f2bee;
+}
+#blog ul li h4 { 
+	font-size: 17px;
+	font-family: 'GT-Eesti Medium';
+	margin-bottom: 20px;
+}
+#blog ul li a.button { 
+	font-family: 'GT-Eesti Regular';
+	margin-bottom: 20px;
+}
+#blog ul li a.button:hover{
+	text-decoration: underline;
+}
+#blog div.bottom a.button { 
+	text-align: center;
+    margin: 0 auto;
+    display: block;
+	width: 20%;
+	padding: 15px;
+	background: rgb(9, 121, 250);
+	color: #fff;
+	border-radius: 5px;
+	font-family: 'GT-Eesti Regular';
+}
+#contact { 
+	background: #000;
+	color: #fff;
+	padding: 80px 0;
+}
+#contact section.wrapper{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#contact div.left { 
+	width: 48%;
+}
+#contact div.left h3 { 
+	width: 50%;
+	font-size: 40px;
+	font-family: 'GT-Eesti Bold';
+	margin-bottom: 30px;
+}
+#contact div.left p { 
+	color: rgb(117, 111, 111);
+	font-family: 'GT-Eesti Medium';
+	font-size: 17px;
+	margin-bottom: 30px;
+}
+#contact div.left hr.line { 
+	width: 35%;
+	border-bottom: 1px dotted rgb(136, 125, 125);
+}
+#contact div.left div.testimonials { 
+	margin-top: 15px;
+}
+#contact div.left div.testimonials h5 { 
+	font-size: 18px;
+	font-family: 'GT-Eesti Bold';
+	margin-bottom: 20px;
+}
+#contact div.left div.testimonials div.content blockquote { 
+	font-style: italic;
+	font-family: 'GT-Eesti Regular';
+	margin-bottom: 20px;
+}
+#contact div.left div.testimonials div.content h6 { 
+	font-family: 'GT-Eesti Medium';
+	font-size: 18px;
+}
+#contact div.left div.testimonials div.content span.role { 
+	color: rgb(117, 111, 111);
+	font-family: 'GT-Eesti Regular';
+	margin-bottom: 15px;
+	display: inline-block;
+}
+#contact div.left div.testimonials div.content ul.people { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 40%;
+}
+#contact div.left div.testimonials div.content ul.people li.active { 
+	border-radius: 50%;
+	border: 2px solid #dd5d22;
+	height: 42px;
+    padding: 2px 2px 0;
+}
+#contact div.left div.testimonials div.content ul.people li { 
+	display: block;
+	width: 40px;
+	margin-bottom: 30px;
+}
+#contact div.left div.testimonials div.content ul.people li img { 
+	width: 100%;
+	border-radius: 50%;
+}
+#contact div.left div.testimonials div.content hr.line { 
+	margin-bottom: 40px;
+}
+#contact div.left div.companies ul { 
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#contact div.right {
+    background: #ffffff;
+    width: 48%;
+    border-radius: 5px;
+	padding: 40px;
+}
+#contact div.right h4 { 
+	color: #000;
+	font-size: 20px;
+	font-family: 'GT-Eesti Bold';
+	margin-bottom: 20px;
+}
+#contact div.right form div.one_by_two { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#contact div.right form div.one_by_two input { 
+	width: 48%;
+	padding: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #dad5d5;
+	font-family: 'GT-Eesti Light';
+}
+#contact div.right form div.one_by_two select{
+	width: 48%;
+	padding: 15px;
+	color: #9B9B9B;
+	margin-bottom: 15px;
+	cursor: pointer;
+	font-family: 'GT-Eesti Light';
+	border: 1px solid #dbd5d5;
+}
+#contact div.right form div.full { 
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+#contact div.right form div.full input[type="checkbox"]{ 
+	width: 30px;
+	height: 25px;
+	margin-right: 20px;
+}
+#contact div.right form div.full p { 
+	color: #5c5757;
+	font-size: 14px;
+}
+#contact div.right form div.full p a { 
+	color: #5c5757;
+}
+#contact div.right form div.full p a:hover { 
+	text-decoration: underline;
+}
+#contact div.right form div.full input[type="submit"]{
+	background: rgb(28, 68, 248);
+	padding: 15px;
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'GT-Eesti Medium';
+	font-size: 17px;
+	display: inline-block;
+	width: 80%;
+}
+footer { 
+	padding: 100px 0;
+}
+footer section.top { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+footer section.top div.item { 
+	width: calc(100%-33%);
+}
+footer section.top div.item.large { 
+	width: 33%;
+	padding-right: 100px;
+}
+footer section.top div.item h2 { 
+	font-family: 'GT-Eesti Regular';
+	margin-bottom: 35px;
+}
+footer section.top div.item div.social ul { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+footer section.top div.item div.social ul li a { 
+	width: 100%;
+	background: rgb(235, 232, 232);
+	padding: 12px;
+	border-radius: 10px;
+	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer section.top div.item div.social ul li a img { 
+	filter: grayscale(100%);
+	opacity: 0.4;
+}
+footer section.top div.item h5{
+	font-family: 'GT-Eesti Medium';
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+footer section.top div.item ul li{
+	font-family: 'GT-Eesti Regular';
+	margin-bottom: 15px;
+}
+footer section.top div.item ul li a{
+	display: block;
+}
+footer section.top div.item.icon ul li a{
+	display: flex;
+	align-items: center;
+}
+footer section.top div.item img{
+	height: 17px;
+}
+footer section.top div.item img:last-child{
+	height: 15px;
+}
+footer section.top div.item ul li.bold{
+	font-family: 'GT-Eesti Medium';
+}
+footer section.top div.item ul li.bold.margin{
+	margin-top: 50px;
+}
+footer section.bottom div.title{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+footer section.bottom div.title img{
+	margin-right: 10px;
+	height: 17px;
+}
+footer section.bottom div.title span{
+	font-family: 'GT-Eesti Medium';
+}
+footer section.bottom div.lang a{
+	font-family: 'GT-Eesti Regular';
+	margin-right: 15px;
+}
+@media all and (max-width:1496px){
+	#spotlight{
+		padding-top: 50px;
+	}
+	#spotlight section.left h1{
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+	#spotlight section.left p{
+		font-size: 15px;
+	}
+}
+@media all and (max-width:1280px){
+	header nav.middle ul li{
+		margin-right: 20px;
+	}
+	#spotlight section.right div.dotted{
+		left: 285px;
+		height: 40px;
+	}
+	#spotlight section.right div.play{
+		left: 360px;
+	}
+	#spotlight section.right{
+		background-size: 400px;
+	}
+	#creators {
+		padding: 60px 0;
+	}
+	#content section.features section.wrapper{
+		justify-content: flex-start;
+	}
+	#content section.features.bg section.wrapper{
+		justify-content: flex-start;
+	}
+	#content section.features div.left {
+		width: 50%;
+	}
+	#content section.features div.right {
+		width: 70%;
+
+	}
+	#content section.features div.right hr.line{
+		display: none;
+	}
+	#content section.features div.right {
+		margin: 0;
+	}
+	#content section.features.bg div.right {
+		margin: 0;
+	}
+	#reviews section.bottom ul{
+		justify-content: center;
+	}
+	#reviews section.bottom ul li {
+		width: 50%;
+	}
+	#products section.top{
+		width: 50%;
+	}
+	#blog section.top {
+		width: 60%;
+	}
+}
+@media all and (max-width:1080px){
+	header nav.middle ul li{
+		display: none;
+	}
+	#spotlight section.right div.dotted{
+		display: none;
+	}
+	#spotlight section.right div.play{
+		display: none;
+	}
+	#creators ul{
+		justify-content: center;
+	}
+	#creators ul li{
+		width: 20%;
+	}
+	
+	#reviews section.bottom ul li{
+		margin-bottom: 60px;
+	}
+	#features section.top {
+		width: 60%;
+	}
+	#features section.content ul li{
+		padding: 30px;
+	}
+	footer section.top div.item ul li{
+		width: 18%;
+	}
+}
+@media all and (max-width:980px){
+	#spotlight{
+		padding-top: 20px;
+	}
+	#spotlight section.right{
+		display: none;
+	}
+	#spotlight section.left{
+		text-align: center;
+		margin: 0 auto;
+		width: 70%;
+	}
+	#spotlight section.left h1{
+		font-size: 30px;
+	}
+	#spotlight section.left p{
+		width: 100%;
+	}
+	#spotlight section.left form{
+		text-align: center;
+		margin: 0 auto;
+		width: 70%;
+	}
+	#creators ul li{
+		width: 25%;
+	}
+	#creators ul li a img{
+		height: 20px;
+	}
+	#reviews{
+		padding-bottom: 20px;
+	}
+	#reviews section.bottom ul li {
+		width: 70%;
+	}
+	#reviews section.top{
+		width: 60%;
+	}
+	#features section.bottom {
+		width: 70%;
+	}
+	#products section.top{
+		width: 70%;
+	}
+	#products ul li{
+		width: 48%;
+		margin-bottom: 120px;
+	}
+	#products ul li:last-child{
+		margin-bottom: 20px;
+	}
+	#products ul li div.img_container img.hero{
+		top: 60%;
+	}
+	#blog {
+		padding-top: 0;
+	}
+	#blog div.bottom a.button{
+		width: 30%;
+	}
+	#contact div.left {
+		width: 90%;
+		margin-bottom: 50px;
+	}
+	#contact div.right{
+		width: 90%;
+	}
+	footer section.top div.item.large {
+		width: 90%;
+	}
+	footer section.top div.item.large div.social ul{
+		justify-content: center;
+	}
+	footer section.top div.item.large div.social ul li{
+		width: 8%;
+		margin-right: 10px;
+	}
+	footer section.top div.item{
+		width: 24%;
+	}
+	footer section.top div.item ul li {
+		width: 100%;
+	}
+}
+@media all and (max-width:768px){
+	#spotlight section.left form input[type="email"] {
+		padding: 12px 17px;
+	}
+	#spotlight section.left form input[type="submit"] {
+		padding: 14px 20px;
+		top: -5%;
+	}
+	#content section.features div.right div.top h3{
+		font-size: 30px;
+	}
+	#content section.features div.right div.top p{
+		font-size: 17px;
+	}
+	#content section.features div.right div.top a.button{
+		margin-bottom: 0;
+	}
+	#content section.features div.right div.review blockquote{
+		font-size: 16px;
+	}
+	#content section.features div.right{
+		width: 100%;
+	}
+	#content section.features.bg div.right{
+		width: 100%;
+	}
+	#reviews section.top{
+		width: 80%;
+	}
+	#about{
+		padding-top: 0;
+	}
+	#about ul li{
+		width: 100%;
+	}
+	#products{
+		padding-top: 20px;
+	}
+	#features section.top h3{
+		font-size: 30px;
+	}
+}
+@media all and (max-width:640px){
+	header {
+		justify-content: center;
+	}
+	header nav.right ul{
+		display: none;
+	}
+	#spotlight{
+		padding-bottom: 30px;
+	}
+	#spotlight section.left{
+		width: 100%;
+	}
+	#creators ul li{
+		width: 32%;
+	}
+	#content section.features{
+		padding-top: 0;
+	}
+	#content section.features div.left{
+		width: 70%;
+	}
+	#content section.features div.right div.top span.icon{
+		width: 35px;
+		padding: 10px 15px;
+	}
+	#content section.features div.right div.top span.icon img{
+		width: 15px;
+	}
+	#features{
+		padding-bottom: 20px;
+	}
+	#features section.top {
+		width: 100%;
+	}
+	#features section.content ul li{
+		width: 50%;
+	}
+	#features section.content ul li.border{
+		border-right: none;
+	}
+	#features section.bottom {
+		width: 90%;
+	}
+	#products section.top{
+		width: 95%;
+	}
+	#products section.top h3 {
+		font-size: 25px;
+	}
+	#products ul li{
+		padding: 20px;
+	}
+	#blog section.top {
+		width: 90%;
+	}
+	#blog section.top h3{
+		font-size: 25px;
+	}
+	#blog ul{
+		justify-content: center;
+	}
+	#blog ul li{
+		width: 48%;
+		margin-bottom: 20px;
+	}
+	#blog div.bottom a.button {
+		width: 70%;
+	}
+	#contact div.left h3 {
+		width: 80%;
+		font-size: 25px;
+	}
+	#contact div.left div.testimonials div.content ul.people {
+		width: 70%;
+	}
+	#contact div.left div.companies ul{
+		justify-content: center;
+	}
+	#contact div.left div.companies ul li{
+		width: 48%;
+		margin-bottom: 20px;
+	}
+	footer section.top div.item{
+		width: 48%;
+	}
+}
+@media all and (max-width:480px){
+	header h1 {
+		width: 100px;
+	}
+	#spotlight section.left h1 {
+		font-size: 25px;
+	}
+	#creators ul li {
+		width: 45%;
+	}
+	#reviews section.top h3 {
+    font-size: 30px;
+	}
+	#reviews section.bottom ul li div.top {
+		height: 223px;
+		width: 257px;
+	}
+	#reviews section.bottom ul li div.top div.logo {
+		padding: 95px 0 0 10px;
+	}
+	#features{
+		padding-top: 20px;
+	}
+	#features section.top h3 {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	#features section.bottom section.content div.element {
+		justify-content: center;
+	}
+	#features section.bottom section.content div.element p{
+		width: 90%;
+		margin-bottom: 25px;
+	}
+	#features section.bottom section.content div.element a.button{
+		width: 70%;
+	}
+	#features section.bottom section.content span.icon{
+		top: -17%;
+	}
+	#features section.content ul li {
+		width: 90%;
+	}
+	#products ul li{
+		width: 90%;
+	}
+	#blog ul li{
+		width: 90%;
+	}
+	#contact div.right form div.one_by_two input {
+		width: 98%;
+	}
+	#contact div.right form div.one_by_two select {
+		width: 98%;
+	}
+	#contact div.right form div.full p {
+		font-size: 10px;
+	}
+	#contact div.right form div.full{
+		margin-bottom: 15px;
+	}
+	#contact div.right form div.full input[type="submit"]#contact div.right form div.full input[type="submit"]{
+		font-size: 15px;
+	}
+	footer {
+		padding-top: 50px;
+	}
+	footer section.top div.item.large {
+		padding-right:0;
+	}
+	footer section.top div.item.large div.social ul li {
+		width: 16%;
+	}
+}
+@media all and (max-width:360px){
+	#spotlight section.left form{
+		width: 90%;
+	}
+	#creators ul li a img {
+		height: 18px;
+	}
+	#content section.features div.right div.top h3 {
+		font-size: 20px;
+	}
+	#content section.features div.right div.top p {
+		font-size: 14px;
+	}
+	#content section.features div.right div.review blockquote {
+		font-size: 13px;
+	}
+	#content section.features div.right div.review span {
+		font-size: 14px;
+	}
+	#reviews section.top h3 {
+		font-size: 20px;
+	}
+	#reviews section.bottom ul {
+		justify-content: flex-start;
+	}
+	#reviews section.bottom ul li h4{
+		width: 100%;
+		font-size: 14px;
+	}
+	#about ul li div.top{
+		background-size: contain;
+	}
+	#about ul li div.top div.logo{
+		margin-top: 180px;
+	}
+	#about ul li div.top.ken{
+		background-size: contain;
+	}
+	#about ul li div.top.ken div.logo{
+		margin-top: 180px;
+	}
+	#features section.bottom section.content div.element{
+		padding: 15px;
+	}
+	#features section.top h3{
+		font-size: 21px;
+	}
+	#features section.content ul li{
+		padding: 10px;
+	}
+	#features section.content ul li h3{
+		font-size: 19px;
+	}
+	#features section.content ul li p {
+		font-size: 15px;
+	}
+	#blog{
+		padding-bottom: 30px;
+	}
+	#blog ul{
+		margin-bottom: 30px;
+	}
+	#contact div.right form div.full input[type="submit"]{
+		padding: 13px;
+		font-size: 14px;
+	}
+	footer section.top div.item h2{
+		font-size: 19px;
+	}
+}
